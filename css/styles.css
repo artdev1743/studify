@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'GreycliffCF';
+  src: url('../fonts/Greycliffcf-Demibold.woff') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'GreycliffCF';
+  src: url('../fonts/Greycliffcf-Bold.woff') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'GreycliffCF';
+  src: url('../fonts/Greycliffcf-Extrabold.woff') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'GreycliffCF';
+  src: url('../fonts/Greycliffcf-Heavy.woff') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('opentype');
+  font-weight: 400;
+}
+
+body,
+html {
+  margin: 0;
+  font-size: 16px;
+
+  --brand-color: #525fe1;
+
+  --typography-main: #19202d;
+  --typography-secondary: #6e8098;
+  --typography-button: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'GreycliffCF';
+  margin: 0;
+  color: var(--typography-main);
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background-color: var(--typography-button);
+}
+
+.header-menu-logo h2 {
+  color: var(--brand-color);
+}
+
+.header-menu-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu-options h3 {
+  cursor: pointer;
+}
+
+.header-menu-options h3:not(:first-child) {
+  margin-left: 24px;
+}
+
+.header-menu-login {
+  background-color: var(--brand-color);
+  color: var(--typography-button);
+  cursor: pointer;
+  font-family: 'GreycliffCF';
+  font-size: 1.15rem;
+  line-height: 1.15rem;
+  font-weight: 600;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.header-menu-login:hover {
+  transform: scale(1.03);
+}
+
+.banner-section {
+  padding: 96px 144px;
+}
+
+.banner-section h1 {
+  font-size: 5rem;
+  max-width: 500px;
+}
+
+.banner-section p {
+  color: var(--typography-secondary);
+  max-width: 500px;
+  border-left: 2px solid var(--brand-color);
+  padding-left: 16px;
+}
+
+.banner-section button {
+  margin-top: 16px;
+}
