@@ -66,8 +66,9 @@ p {
   background: transparent;
 }
 
-.header-menu-logo h2 {
+.header-menu-logo h1 {
   color: var(--brand-color);
+  margin-left: 16px;
 }
 
 .header-menu-options {
@@ -105,6 +106,13 @@ p {
 .banner-section {
   padding: 192px 144px 96px 144px;
   background: url(../img/BannerBackground.svg) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-section img {
+  width: 40vw;
 }
 
 .banner-section h1 {
@@ -117,6 +125,7 @@ p {
   max-width: 500px;
   border-left: 2px solid var(--brand-color);
   padding-left: 16px;
+  letter-spacing: 0.05rem;
 }
 
 .banner-section button {
