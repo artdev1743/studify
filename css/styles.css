@@ -58,9 +58,12 @@ p {
 .header-menu {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
   align-items: center;
   padding: 24px 48px;
-  background-color: var(--typography-button);
+  background: transparent;
 }
 
 .header-menu-logo h2 {
@@ -100,7 +103,8 @@ p {
 }
 
 .banner-section {
-  padding: 96px 144px;
+  padding: 192px 144px 96px 144px;
+  background: url(../img/BannerBackground.svg) !important;
 }
 
 .banner-section h1 {
