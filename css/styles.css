@@ -28,6 +28,18 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.ttf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Thin.ttf') format('opentype');
+  font-weight: 100;
+}
+
 body,
 html {
   margin: 0;
@@ -104,7 +116,7 @@ p {
 }
 
 .banner-section {
-  padding: 192px 144px 96px 144px;
+  padding: 176px 128px 96px 128px;
   background: url(../img/BannerBackground.svg) !important;
   display: flex;
   justify-content: space-between;
@@ -130,4 +142,58 @@ p {
 
 .banner-section button {
   margin-top: 16px;
+}
+
+.choose-us-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 128px 64px;
+  align-items: center;
+  background: #fefefe;
+}
+
+.choose-us-section img {
+  width: 40vw;
+}
+
+.choose-us-section h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--brand-color);
+}
+
+.choose-us-section h2 {
+  font-size: 2.5rem;
+  margin-top: 16px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 40vw;
+  grid-row-gap: 48px;
+  margin-top: 64px;
+}
+
+.feature-item {
+  max-width: 85%;
+}
+
+.feature-item img {
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.feature-item h4 {
+  font-size: 1.25rem;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.feature-item p {
+  margin: 16px 0 0 0;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+  color: var(--typography-secondary);
+  line-height: 1.5rem;
 }
