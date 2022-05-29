@@ -46,6 +46,7 @@ html {
   font-size: 16px;
 
   --brand-color: #525fe1;
+  --brand-color-orange: #e7772f;
 
   --typography-main: #19202d;
   --typography-secondary: #6e8098;
@@ -97,7 +98,7 @@ p {
   margin-left: 24px;
 }
 
-.header-menu-login {
+.brand-button {
   background-color: var(--brand-color);
   color: var(--typography-button);
   cursor: pointer;
@@ -111,8 +112,9 @@ p {
   transition: all 0.3s;
 }
 
-.header-menu-login:hover {
+.brand-button:hover {
   transform: scale(1.03);
+  background: var(--brand-color-orange);
 }
 
 .banner-section {
@@ -147,7 +149,7 @@ p {
 .choose-us-section {
   display: flex;
   justify-content: space-between;
-  padding: 128px 64px;
+  padding: 128px 64px 64px 64px;
   align-items: center;
   background: #fefefe;
 }
@@ -159,7 +161,7 @@ p {
 .choose-us-section h3 {
   text-transform: uppercase;
   font-weight: 400;
-  color: var(--brand-color);
+  color: var(--brand-color-orange);
 }
 
 .choose-us-section h2 {
@@ -195,5 +197,36 @@ p {
   letter-spacing: 0.05rem;
   font-weight: 300;
   color: var(--typography-secondary);
+  line-height: 1.5rem;
+}
+
+.choose-us-text {
+  max-width: 40vw;
+}
+
+.choose-us-text-border {
+  margin-top: 32px;
+  color: var(--typography-secondary);
+  border-left: 2px solid var(--brand-color);
+  padding-left: 16px;
+  letter-spacing: 0.05rem;
+}
+
+.choose-us-section-cards {
+  margin-top: 32px;
+}
+
+.choose-us-card {
+  display: flex;
+}
+
+.choose-us-card img {
+  max-width: 10%;
+}
+
+.choose-us-card p {
+  margin-left: 16px;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
   line-height: 1.5rem;
 }
