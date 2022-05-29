@@ -184,3 +184,15 @@ p {
     font-size: 29px;
   }
 }
+
+@media screen and (min-width: 2840px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  html {
+    font-size: 46px;
+  }
+}
