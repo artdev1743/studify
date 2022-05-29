@@ -1,9 +1,12 @@
 .banner-section {
-  padding: 176px 128px 96px 128px;
-  background: url(../img/BannerBackground.svg) !important;
+  padding: 11rem 8rem 6rem 8rem;
+  background: url(../img/BannerBackground.svg) no-repeat !important;
+  background-size: 100vw 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .banner-section img {
@@ -19,20 +22,23 @@
   color: var(--typography-secondary);
   max-width: 80%;
   border-left: 2px solid var(--brand-color);
-  padding-left: 16px;
+  padding-left: 1rem;
   letter-spacing: 0.05rem;
+  font-size: 1rem;
 }
 
 .banner-section button {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .choose-us-section {
   display: flex;
   justify-content: space-between;
-  padding: 128px 64px 64px 64px;
+  padding: 8rem 4rem 4rem 4rem;
   align-items: center;
   background: #fefefe;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .choose-us-section img {
@@ -42,12 +48,13 @@
 .choose-us-section h3 {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1rem;
   color: var(--brand-color-orange);
 }
 
 .choose-us-section h2 {
   font-size: 2.5rem;
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .features {
@@ -55,7 +62,7 @@
   grid-template-columns: 1fr 1fr;
   max-width: 40vw;
   grid-row-gap: 48px;
-  margin-top: 64px;
+  margin-top: 4rem;
 }
 
 .feature-item {
@@ -69,16 +76,17 @@
 
 .feature-item h4 {
   font-size: 1.25rem;
-  margin-top: 16px;
+  margin-top: 1rem;
   font-weight: 500;
 }
 
 .feature-item p {
-  margin: 16px 0 0 0;
+  margin: 1rem 0 0 0;
   letter-spacing: 0.05rem;
   font-weight: 300;
   color: var(--typography-secondary);
   line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 .choose-us-text {
@@ -86,15 +94,16 @@
 }
 
 .choose-us-text-border {
-  margin-top: 32px;
+  margin-top: 2rem;
+  font-size: 1rem;
   color: var(--typography-secondary);
   border-left: 2px solid var(--brand-color);
-  padding-left: 16px;
+  padding-left: 1rem;
   letter-spacing: 0.05rem;
 }
 
 .choose-us-section-cards {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .choose-us-card {
@@ -106,7 +115,8 @@
 }
 
 .choose-us-card p {
-  margin-left: 16px;
+  margin-left: 1rem;
+  font-size: 1rem;
   letter-spacing: 0.05rem;
   font-weight: 300;
   line-height: 1.5rem;
@@ -114,15 +124,15 @@
 }
 
 .stats-section-container {
-  width: 80vw;
+  width: 85vw;
   background: var(--brand-color);
   margin: 0 auto;
   border-radius: 6px;
-  margin-top: 48px;
+  margin-top: 3rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 72px 0;
+  padding: 4.5rem 0;
 }
 
 .stats-section-container div:not(:last-child) {
@@ -133,7 +143,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 36px;
+  padding: 0 2.25rem;
 }
 
 .stats-section-card img {
@@ -143,7 +153,7 @@
 .stats-section-card h3 {
   color: var(--typography-button);
   font-size: 2.5rem;
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .stats-section-card h4 {

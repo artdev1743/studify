@@ -75,13 +75,14 @@ p {
   left: 0;
   right: 0;
   align-items: center;
-  padding: 24px 48px;
+  padding: 1.5rem 3rem;
   background: transparent;
 }
 
 .header-menu-logo h1 {
   color: var(--brand-color);
-  margin-left: 16px;
+  margin-left: 1rem;
+  font-size: 2rem;
 }
 
 .header-menu-options {
@@ -92,10 +93,11 @@ p {
 
 .header-menu-options h3 {
   cursor: pointer;
+  font-size: 1.25rem;
 }
 
 .header-menu-options h3:not(:first-child) {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .brand-button {
@@ -107,7 +109,7 @@ p {
   line-height: 1.15rem;
   font-weight: 600;
   border: none;
-  padding: 16px 36px;
+  padding: 1rem 2.25rem;
   border-radius: 4px;
   transition: all 0.3s;
 }
@@ -115,4 +117,70 @@ p {
 .brand-button:hover {
   transform: scale(1.03);
   background: var(--brand-color-orange);
+}
+
+@media screen and (min-width: 1540px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1840px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1940px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 2040px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 2140px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 2240px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 2340px) {
+  html {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 2440px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 2540px) {
+  html {
+    font-size: 29px;
+  }
 }
