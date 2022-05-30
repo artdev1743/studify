@@ -203,4 +203,41 @@
     margin-top: 3rem;
     width: 70vw;
   }
+
+  .choose-us-section {
+    flex-direction: column;
+    justify-items: center;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .choose-us-section img {
+    width: 60vw;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 70vw;
+  }
+
+  #choose-us-text {
+    margin-top: 4rem;
+  }
+
+  .choose-us-text {
+    max-width: 70vw;
+  }
+
+  .section-illustration {
+    margin-top: 4rem;
+  }
+
+  .choose-us-section-cards div:nth-child(2) {
+    margin-top: 2rem;
+  }
+
+  .stats-section-container {
+    width: 95vw;
+  }
 }
