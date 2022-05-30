@@ -210,3 +210,9 @@ p {
     font-size: 46px;
   }
 }
+
+@media screen and (min-width: 5760px) {
+  html {
+    font-size: 62px;
+  }
+}

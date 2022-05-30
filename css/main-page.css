@@ -1,5 +1,5 @@
 .banner-section {
-  padding: 11rem 8rem 6rem 8rem;
+  padding: 14rem 8rem 6rem 8rem;
   background: url(../img/BannerBackground.svg) no-repeat !important;
   background-size: 100vw 100vh;
   display: flex;
@@ -163,4 +163,44 @@
   font-size: 400;
   letter-spacing: 0.1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner-section {
+    padding: 14rem 4rem 6rem 4rem;
+  }
+
+  .banner-section img {
+    width: 45vw;
+  }
+
+  .choose-us-section {
+    padding: 8rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-section {
+    padding: 12rem 4rem 6rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .banner-section h1 {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .banner-section p {
+    max-width: 70%;
+    margin: 1rem auto 2rem auto;
+    border: none;
+  }
+
+  .banner-section img {
+    margin-top: 3rem;
+    width: 70vw;
+  }
 }
