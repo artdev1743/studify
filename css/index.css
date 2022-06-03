@@ -1,42 +1,54 @@
 @font-face {
-  font-family: 'GreycliffCF';
-  src: url('../fonts/Greycliffcf-Demibold.woff') format('opentype');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'GreycliffCF';
-  src: url('../fonts/Greycliffcf-Bold.woff') format('opentype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'GreycliffCF';
-  src: url('../fonts/Greycliffcf-Extrabold.woff') format('opentype');
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'GreycliffCF';
-  src: url('../fonts/Greycliffcf-Heavy.woff') format('opentype');
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Black.ttf') format('opentype');
   font-weight: 900;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf') format('opentype');
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-ExtraBold.ttf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Bold.ttf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-SemiBold.ttf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Medium.ttf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Regular.ttf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Light.ttf') format('opentype');
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Light.ttf') format('opentype');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Thin.ttf') format('opentype');
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-ExtraLight.ttf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Thin.ttf') format('opentype');
   font-weight: 100;
 }
 
@@ -46,7 +58,8 @@ html {
   font-size: 16px;
 
   --brand-color: #525fe1;
-  --brand-color-orange: #e7772f;
+  --brand-color-orange: #f86f03;
+  --button-background: rgba(82, 95, 225, 0.15);
 
   --typography-main: #19202d;
   --typography-secondary: #6e8098;
@@ -59,13 +72,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'GreycliffCF';
+  font-family: 'Urbanist';
   margin: 0;
   color: var(--typography-main);
 }
 
 p {
-  font-family: 'Roboto';
+  font-family: 'Urbanist';
 }
 
 .header-menu {
@@ -118,7 +131,6 @@ p {
   background-color: var(--brand-color);
   color: var(--typography-button);
   cursor: pointer;
-  font-family: 'GreycliffCF';
   font-size: 1.15rem;
   line-height: 1.15rem;
   font-weight: 600;
