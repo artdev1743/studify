@@ -171,6 +171,7 @@
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 3fr 2fr;
+  align-items: center;
 }
 
 .section-subtitle {
@@ -235,6 +236,7 @@
   color: var(--typography-secondary);
   font-size: 1.25rem;
   line-height: 2rem;
+  margin-top: 2rem;
 }
 
 .testimonial-card-footer {
