@@ -31,7 +31,7 @@
   margin-top: 1rem;
 }
 
-.choose-us-section {
+.information-section {
   display: flex;
   justify-content: space-between;
   padding: 8rem 4rem 4rem 4rem;
@@ -41,18 +41,19 @@
   box-sizing: border-box;
 }
 
-.choose-us-section img {
+.information-section img {
   width: 40vw;
 }
 
-.choose-us-section h3 {
+.information-section h3 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
   font-size: 1rem;
   color: var(--brand-color-orange);
 }
 
-.choose-us-section h2 {
+.information-section h2 {
   font-size: 2.5rem;
   margin-top: 1rem;
 }
@@ -102,7 +103,7 @@
   letter-spacing: 0.05rem;
 }
 
-.choose-us-section-cards {
+.information-section-cards {
   margin-top: 2rem;
 }
 
@@ -325,14 +326,14 @@
     width: 70vw;
   }
 
-  .choose-us-section {
+  .information-section {
     flex-direction: column;
     justify-items: center;
     height: auto;
     box-sizing: border-box;
   }
 
-  .choose-us-section img {
+  .information-section img {
     width: 60vw;
   }
 
@@ -354,7 +355,7 @@
     margin-top: 4rem;
   }
 
-  .choose-us-section-cards div:nth-child(2) {
+  .information-section-cards div:nth-child(2) {
     margin-top: 0.5rem;
   }
 
@@ -385,7 +386,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .choose-us-section img {
+  .information-section img {
     width: 80vw;
   }
 
