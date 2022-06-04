@@ -131,9 +131,10 @@ p {
   background-color: var(--brand-color);
   color: var(--typography-button);
   cursor: pointer;
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.15rem;
   font-weight: 600;
+  font-family: 'Urbanist';
   border: none;
   padding: 1rem 2.25rem;
   border-radius: 0.25rem;
