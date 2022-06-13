@@ -1,0 +1,211 @@
+/*
+Author: Wenyuan Yu
+*/
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-Black.ttf') format('opentype');
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-ExtraBold.ttf') format('opentype');
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-Bold.ttf') format('opentype');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-SemiBold.ttf') format('opentype');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-Medium.ttf') format('opentype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-Regular.ttf') format('opentype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-Light.ttf') format('opentype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-ExtraLight.ttf') format('opentype');
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist-Thin.ttf') format('opentype');
+    font-weight: 100;
+  }
+
+body,
+html{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1610%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='23.695' cx='205.84' cy='72.22' fill='url(%23SvgjsLinearGradient1611)'%3e%3c/circle%3e%3ccircle r='34.545' cx='882.36' cy='169.7' fill='url(%23SvgjsLinearGradient1612)'%3e%3c/circle%3e%3ccircle r='42.25' cx='432.86' cy='203.69' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='26.765' cx='1208.33' cy='184.13' fill='url(%23SvgjsLinearGradient1613)'%3e%3c/circle%3e%3ccircle r='21.785' cx='322.68' cy='464.53' fill='url(%23SvgjsLinearGradient1614)'%3e%3c/circle%3e%3ccircle r='25.715' cx='1363.57' cy='475.14' fill='url(%23SvgjsLinearGradient1615)'%3e%3c/circle%3e%3ccircle r='22.365' cx='586.26' cy='75.23' fill='url(%23SvgjsLinearGradient1616)'%3e%3c/circle%3e%3ccircle r='42.56' cx='1048.96' cy='43.16' fill='url(%23SvgjsLinearGradient1617)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1610'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='158.45' y1='72.22' x2='253.23' y2='72.22' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1611'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(115%2c 70%2c 135%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='813.27' y1='169.7' x2='951.45' y2='169.7' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1612'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1154.8' y1='184.13' x2='1261.86' y2='184.13' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1613'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='279.11' y1='464.53' x2='366.25' y2='464.53' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1614'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1312.1399999999999' y1='475.14' x2='1414.9999999999998' y2='475.14' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1615'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='541.53' y1='75.23' x2='630.99' y2='75.23' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1616'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='963.84' y1='43.16' x2='1134.08' y2='43.16' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1617'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Urbanist';
+    margin: 0;
+}
+
+.header-section{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    margin: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 400px;
+    height: 50px;
+}
+
+.header-menu h3{
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header-menu h3:hover{
+    color:blue;
+
+}
+
+.header-log{
+    font-size: 1.25rem;
+    color: #525fe1;
+}
+
+.header-setting{
+    display: flex;
+}
+
+.header-setting img{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+.form{
+    position: absolute;
+    display: block;
+    top:20%;
+    left:20%;
+    color: aliceblue;
+    height: 60%;
+    font-family: 'Urbanist';
+    color: antiquewhite;
+}
+
+.form-header h1{
+    font-size: 2rem;
+}
+
+.form-header h3{
+    max-width:70%;
+    color: #525fe1;
+}
+
+.form-mainPart{
+  display: flex;
+}
+
+.form-mainPart form{
+  font-size: 2rem;
+}
+
+.form-mainPart input{
+  font-size: 1.75rem;
+  height:2.25rem;
+  width: 25rem;
+}
+
+.form2{
+  margin-left: 2rem;
+}
+
+#fullname{
+  width: 15rem;
+}
+
+#email{
+  margin-left: 1.8rem;
+}
+
+.form-subpart label{
+  font-size: 2rem;
+}
+
+#satisify{
+  margin-left: 3rem;
+}
+
+.form-subpart input{
+  margin-left: 2rem;
+}
+
+.label1{
+  font-size:1.5rem;
+}
+
+#form-textarea{
+  width: 1094px;
+  height: 237px;
+}
+
+#form-button{
+  width: 30rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  margin-left: 38.8rem;
+  background-color: #525fe1;
+  color:aliceblue;
+  font-family: 'Urbanist';
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#form-button:hover{
+  color: black;
+  transform: scale(1.03);
+}
+
+#address{
+  width: 24.5rem;
+}
+
+.error{
+  font-size: 1rem;
+  color:red;
+}
