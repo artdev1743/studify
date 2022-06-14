@@ -196,6 +196,7 @@
   letter-spacing: 0.05rem;
   max-width: 30vw;
   line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 .testimonials-subtitle {
@@ -218,6 +219,7 @@
 .testimonials-stats-card-paragraph {
   color: var(--typography-secondary);
   font-weight: 300;
+  font-size: 1rem;
   max-width: 70%;
   letter-spacing: 0.05rem;
   margin: 0.5rem 0 0 0;
@@ -239,6 +241,7 @@
   font-size: 1.25rem;
   line-height: 2rem;
   margin-top: 2rem;
+  min-height: 9rem;
 }
 
 .testimonial-card-footer {
