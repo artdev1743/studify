@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="icon" href="./img/School.ico">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <header class="header-section">
+        <div class="header-log">
+            <h1>Studify</h1>
+        </div>
+
+        <div class="header-menu">
+            <h3>Home</h3>
+            <h3>Training</h3>
+            <h3>Customers</h3>
+        </div>
+
+        <div class="header-setting">
+            <img src="img/searchButton.png" />
+            <img src="./img/imageButton.png"/>
+        </div>
+    </header>
+
+    <section class="form">
+        <div class="form-header">
+            <h1>Studify User Experience Feedback</h1><br/>
+            <h3>Thanks for visiting our small website! we would like to ask you for filling out this feedback form for helping us to improve the overal quality of serving</h3>
+            <hr/><br/>
+        </div>
+
+        <div class="form-mainPart">
+            <div class="form1">
+                <form>
+                    <label for="text" class="label" id="name_label">Full name: </label>
+                    <input type="text" name="fullname" placeholder="ie: Wenyuan Yu" id="fullname" />
+                    <label for="fullname" class="error" id="field_empty_error">*This field is required</label><br/><br/>
+                    <label for="text" class="label" id="job_label">Job title: </label>
+                    <input type="text" name="job_title" placeholder="ie: Software Engineer" id="job_title" />
+                </form>
+            </div>
+
+            <div class="form2">
+                <form>
+                    <label for="email" class="label" id="email_label">Email: </label>
+                    <input type="email" name="email" placeholder="ie: bruce2000525@outlook.com" id="email"><br/><br/>
+                    <label for="address" class="label" id="address_label">Address: </label>
+                    <input type="address" name="address" placeholder="ie: 111 Andrew Road, Seattle, USA" id="address">
+                </form>
+            </div>
+        </div>
+
+        <div class="form-subpart">
+            <br/>
+            <form>
+                <label for="satisify" class="label" id="radio_label" >Overall experience: </label>
+                <input type="radio" id="satisify" name="satisifyRate" value="satisifyRate">
+                <label for="satisify" class="label1" id="radio_label1">Satisifactory</label>
+                <input type="radio" id="fair" name="satisifyRate" value="fairRate">
+                <label for="fair" id="fair_label" class="label1">Fair</label>
+                <input type="radio" id="poor" name="satisifyRate" value="poorRate">
+                <label for="poor" id="poor_label" class="label1">Poor</label><br/><br/>
+                <h2>Please tell us why you choose the option above! where should we improve: </h3>
+                <textarea id="form-textarea"></textarea><br/>
+            </form><br/>
+            <button id="form-button">Submit</button>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./js/Feedback.js"></script>
+</body>
+</html>

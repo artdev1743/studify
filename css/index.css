@@ -59,6 +59,7 @@ html {
 
   --brand-color: #525fe1;
   --brand-color-orange: #f86f03;
+  --footer-background: #231f40;
   --button-background: rgba(82, 95, 225, 0.15);
 
   --typography-main: #19202d;
@@ -148,6 +149,41 @@ p {
 .brand-button:hover {
   transform: scale(1.03);
   background: var(--brand-color-orange);
+}
+
+footer {
+  background-color: var(--footer-background);
+  padding: 4rem 8rem 1.5rem 8rem;
+}
+
+.copyright-container {
+  margin-top: 8rem;
+}
+
+.copyright-text {
+  margin: 0;
+  color: var(--typography-button);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-logo {
+  color: var(--typography-button);
+}
+
+.footer-logo-text {
+  color: var(--typography-button);
+  max-width: 20rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.footer-social {
+  cursor: pointer;
+}
+
+.footer-social:not(:first-child) {
+  margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 1540px) {
