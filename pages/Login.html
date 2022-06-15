@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" href="../img/School.ico" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" href="../img/favicon.ico" />
     <title>Login</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-</head>
+  </head>
 
-<body>
-    <header class="header-section">
-        <div class="header-log">
-            <h1>Studify</h1>
-        </div>
-
-        <div class="header-menu">
-            <h3>Home</h3>
-            <h3>Courses</h3>
-            <h3>Blog</h3>
-        </div>
-
-        <div class="header-setting">
-            <img src="img/searchButton.png" />
-            <img src="./img/imageButton.png" />
-        </div>
+  <body>
+    <header style="position: unset" class="header-menu">
+      <div class="header-menu-logo">
+        <h1>Studify</h1>
+      </div>
+      <div class="header-menu-options">
+        <a href="../index.html">Home</a>
+        <a href="/pages/Product.html">Product</a>
+        <a href="/pages/About.html">About</a>
+        <a href="/pages/Contact.html">Contact</a>
+      </div>
+      <div class="header-menu-login">
+        <button onclick="location.href='/pages/Login.html'" class="brand-button">Login / Register</button>
+      </div>
     </header>
 
-    <section class="Login">
-        <div class="Login-part1">
-            <h1>Login</h1>
-            <div class="form">
-                <form>
-                    <input type="text" name="username" placeholder="username" id="username"
-                        class="regular_input" /><br />
-                    <label for="text" class="error" id="username_error">*username must start with letter</label><br />
-                    <input type="password" name="password" placeholder="password" id="password"
-                        class="regular_input" /><br />
-                    <label for="password" class="error" id="password_error">*password must be 8 to 16 character
-                        long</label><br />
-                    <input type="checkbox" name="Radio button" value="Remember me" id="checkbox" />Remember me
-                </form><br />
-                <button id="login-button">Login</button>
-            </div>
+    <section class="login-section">
+      <div class="page-section-name-container">
+        <h1 class="page-section-name">Login</h1>
+        <div class="page-section-breadcrumbs">
+          <a href="../index.html" class="breadcrumbs-backlink breadcrumbs-text">Home</a>
+          <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
+          <p class="breadcrums-current breadcrumbs-text">Login</p>
         </div>
-
-        <div class="Login-part2">
-            <img src="./img/DiplomaIcon.svg" />
+      </div>
+      <div class="form-section">
+        <div class="form-container">
+            <h2 class="form-container-title">Login</h2>
+          <form>
+            <input type="text" name="username" placeholder="Username or email" id="username" class="form-input" />
+            <label for="text" class="error" id="username_error"></label>
+            <input
+              style="margin-top: 2rem"
+              type="password"
+              name="password"
+              placeholder="Password"
+              id="password"
+              class="form-input"
+            />
+            <label for="password" class="error" id="password_error"></label>
+            <button type="submit" id="login-button" class="brand-button">Login</button>
+          </form>
+          <p class="form-section-help">Need help logging in?</p>
         </div>
+      </div>
     </section>
 
-    <section class="Instruction">
-        <div id="vertical_line"></div>
-
-        <div id="Instruction-mainPortion">
-            <h4>Login Instructions</h4><br />
-            <h5>Username portion</h5>
-            <h5>1. make sure that your username is not empty</h5>
-            <h5>2. make sure that your username starts with a letter</h5>
-            <h5>3. make sure that your username only contains letters and numbers</h5>
-            <br />
-            <h5>Password portion</h5>
-            <h5>4. the range of your password should be between 8 and 16</h5>
-            <h5>5. must start with a letter</h5>
-            <h5>6. must have at least one special character either ! or *</h5>
-            <h5>7. must have at least one digit</h5><br />
-            <h5>Forgot your password?</h5>
-            <h5>In case you forget your password, you can click here for changing your password <a href="#">change
-                    password</a></h5>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <h1 class="footer-logo">Studify</h1>
+          <p class="footer-logo-text">
+            Whether you want to learn or to share what you know, you've come to the right place. As a global destination
+            for online learning, we connect people through knowledge.
+          </p>
+          <div>
+            <img class="footer-social" src="../img/SocialIcons/LinkedIn.svg" />
+            <img class="footer-social" src="../img/SocialIcons/Facebook.svg" />
+            <img class="footer-social" src="../img/SocialIcons/Twitter.svg" />
+            <img class="footer-social" src="../img/SocialIcons/Instagram.svg" />
+          </div>
         </div>
-    </section>
-
-
-    <footer class="footer">
-        <div class="footer-mainPart">
-            <h4>27 King's College Cir, Toronto, ON, Canada | M5S 1A1</h4>
-            <ul class="list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Service</a></li>
-            </ul>
+        <div class="footer-links-container">
+          <h1 class="footer-logo">Pages</h1>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="/pages/Product.html">Product</a>
+            <a href="/pages/About.html">About</a>
+            <a href="/pages/Contact.html">Contact</a>
+          </div>
         </div>
+        <div class="footer-contact-container">
+          <h1 class="footer-logo">Contact</h1>
+          <div class="footer-contanct-list">
+            <p>Kyrylo Lvov, n01414058</p>
+            <p>Wenyuan Yu, n01403697</p>
+            <p>Artem Tsurkan, n01414146</p>
+            <p>Zoyeba Mahbub, n01445837</p>
+          </div>
         </div>
-        <div class="footer-subpart">
-            <h4>©All rights reserved | Author: Wenyuan Yu</h4>
-        </div>
+      </div>
+      <div class="copyright-container">
+        <p class="copyright-text">Copyright 2022 Studify<br/>Designed For CENG 256.<br/>All Rights Reserved</p>
+      </div>
     </footer>
 
-    <script type="text/javascript" src="./js/Login.js"></script>
-</body>
-
+    <script type="text/javascript" src="../js/login.js"></script>
+  </body>
 </html>

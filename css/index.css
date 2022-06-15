@@ -78,7 +78,8 @@ h6 {
   color: var(--typography-main);
 }
 
-p {
+p,
+a {
   font-family: 'Urbanist';
 }
 
@@ -147,7 +148,7 @@ p {
 }
 
 .brand-button:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   background: var(--brand-color-orange);
 }
 
@@ -214,6 +215,14 @@ footer {
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .header-menu-options {
+    display: none;
+  }
+
+  .header-menu-login {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -221,6 +230,14 @@ footer {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 4rem;
+  }
+
+  .header-menu {
+    padding: 1.5rem 1rem;
+  }
+
+  footer {
+    padding: 4rem 2rem 1.5rem 2rem;
   }
 }
 

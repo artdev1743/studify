@@ -112,7 +112,7 @@
 }
 
 .choose-us-card img {
-  max-width: 10%;
+  max-width: 3rem;
 }
 
 .choose-us-card p {
@@ -365,6 +365,10 @@
   .stats-section-container {
     width: 95vw;
   }
+
+  .testimonials-section {
+    padding: 8rem 1rem 4rem 1rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -386,6 +390,38 @@
   .stats-section-card {
     padding: 2.25rem 2.25rem;
   }
+
+  .testimonials-section {
+    grid-template-columns: 1fr;
+    padding: 8rem 4rem 4rem 4rem;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+  }
+
+  .testimonial-section-text {
+    text-align: center;
+  }
+
+  .section-paragraph {
+    margin: 1rem auto 0 auto;
+    max-width: 90%;
+  }
+
+  .testimonials-stats-card-paragraph {
+    margin: 0.5rem auto 0 auto;
+    max-width: 100%;
+  }
+
+  .testimonials-stats {
+    margin: 2rem auto 0 auto;
+    max-width: 100%;
+  }
+
+  .testimonial-section-text {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -399,6 +435,14 @@
 
   .choose-us-text {
     max-width: 85vw;
+  }
+
+  .testimonials-section {
+    padding: 8rem 2rem 4rem 2rem;
+  }
+
+  footer {
+    padding: 4rem 3rem 1.5rem 3rem;
   }
 }
 
@@ -415,5 +459,76 @@
   .stats-section-container div:not(:last-child) {
     border-bottom: 0.0625rem solid #e7e7e7;
     border-right: none;
+  }
+
+  .testimonials-section {
+    padding: 8rem 1rem 4rem 1rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .testimonial-card-person {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .testimonial-card-person-text {
+    margin: 1rem 0 0 0;
+  }
+
+  .testimonial-card-buttons button {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .testimonial-card-footer {
+    align-items: flex-end;
+  }
+
+  .testimonial-card-paragraph {
+    min-height: 16rem;
+  }
+
+  .banner-section {
+    padding: 9rem 2rem 4rem 2rem;
+  }
+
+  .banner-section h1 {
+    font-size: 3.5rem;
+    max-width: 100%;
+  }
+
+  .banner-section img {
+    width: 80vw;
+  }
+
+  .header-menu {
+    padding: 1.5rem 1rem;
+  }
+
+  .information-section {
+    padding: 4rem 2rem;
+  }
+
+  .brand-button {
+    padding: 0.75rem 1.75rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .banner-section h1 {
+    font-size: 3rem;
+  }
+
+  .banner-section p {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .testimonial-card-buttons button {
+    height: 2rem;
+    width: 2rem;
   }
 }
