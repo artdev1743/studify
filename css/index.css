@@ -60,7 +60,7 @@ html {
   --brand-color: #525fe1;
   --brand-color-orange: #f86f03;
   --footer-background: #231f40;
-  --button-background: rgba(82, 95, 225, 0.15);
+  --button-background: #e6e7f9;
 
   --typography-main: #19202d;
   --typography-secondary: #6e8098;
@@ -78,7 +78,8 @@ h6 {
   color: var(--typography-main);
 }
 
-p {
+p,
+a {
   font-family: 'Urbanist';
 }
 
@@ -147,17 +148,23 @@ p {
 }
 
 .brand-button:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   background: var(--brand-color-orange);
 }
 
 footer {
-  background-color: var(--footer-background);
-  padding: 4rem 8rem 1.5rem 8rem;
+  background-color: var(--brand-color);
+  padding: 4rem 6rem 1.5rem 6rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 6rem;
 }
 
 .copyright-container {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .copyright-text {
@@ -169,21 +176,69 @@ footer {
 
 .footer-logo {
   color: var(--typography-button);
+  font-size: 2rem;
 }
 
 .footer-logo-text {
   color: var(--typography-button);
-  max-width: 20rem;
   font-size: 1rem;
   line-height: 1.75rem;
 }
 
 .footer-social {
   cursor: pointer;
+  width: 2.5rem;
 }
 
-.footer-social:not(:first-child) {
-  margin-left: 0.5rem;
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.footer-links-list a {
+  color: var(--typography-button);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: 'Urbanist';
+}
+
+.footer-links-list a:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.footer-contanct-list p {
+  color: var(--typography-button);
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header-menu-options {
+    display: none;
+  }
+
+  .header-menu-login {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .header-menu {
+    padding: 1.5rem 1rem;
+  }
+
+  footer {
+    padding: 4rem 2rem 1.5rem 2rem;
+  }
 }
 
 @media screen and (min-width: 1540px) {

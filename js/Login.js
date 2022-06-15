@@ -1,42 +1,65 @@
 //author: Wenyuan Yu
 window.onload = function () {
   var bnt = document.getElementById('login-button');
+
   $('.error').hide();
 
   bnt.onclick = function () {
     var username = $('input#username').val();
     var password = $('input#password').val();
+    console.log(username, password);
     var length_password = password.length;
     var counter = 0;
 
     if (specification(username) == false) {
       $('#username_error').show();
-      $('input#username').focus();
+      $('input#username').addClass('input-error');
+      $('input#username').focus;
+      return false;
     } else if (username_specification(username) == false) {
-      $('#username_error').html('*username must only contains numbers and letters').show();
+      $('#username_error').html('Username must only contains numbers and letters').show();
+      $('input#username').addClass('input-error');
       $('input#username').focus();
+      return false;
     } else if (username == '') {
-      $('#username_error').html('*username cannot be empty').show();
+      $('#username_error').html('Username cannot be empty').show();
+      $('input#username').addClass('input-error');
       $('input#username').focus();
+      return false;
     } else {
       $('#username_error').hide();
+      $('input#username').removeClass('input-error');
       counter++;
     }
 
     if (length_password < 8 || length_password > 16) {
-      $('#password_error').show();
+      $('#password_error').html('Password must be between 8 and 16 characters').show();
+      $('input#password').addClass('input-error');
       $('input#password').focus();
+      return false;
     } else if (specification(password) == false) {
-      $('#password_error').html('*the first letter must only be letter').show();
+      $('#password_error').html('The first letter must only be letter').show();
+      $('input#password').addClass('input-error');
       $('input#password').focus();
+      return false;
     } else if (password_specification1(password) == false) {
-      $('#password_error').html('*the password must contain either ! or *').show();
+      $('#password_error').html('The password must contain either ! or *').show();
+      $('input#password').addClass('input-error');
       $('input#password').focus();
+      return false;
     } else if (password_specification2(password) == false) {
-      $('#password_error').html('the password must contain at least 1 digit').show();
+      $('#password_error').html('The password must contain at least 1 digit').show();
+      $('input#password').addClass('input-error');
       $('input#password').focus();
+      return false;
+    } else if (password == '') {
+      $('#password_error').html('Password cannot be empty').show();
+      $('input#password').addClass('input-error');
+      $('input#password').focus();
+      return false;
     } else {
       $('#password_error').hide();
+      $('input#password').removeClass('input-error');
       counter++;
     }
 
