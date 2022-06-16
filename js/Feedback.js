@@ -9,7 +9,7 @@ window.onload = function () {
       $('.error').show();
     } else {
       $('.error').hide();
-      window.location.href = '#';
+      window.location.href = 'FeedbackThankYou.html';
     }
   };
 };
