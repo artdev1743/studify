@@ -1,30 +1,30 @@
 const testimonials = [
   {
-    icon: '/img/AvatarIcons/FirstAvatar.svg',
+    icon: './img/AvatarIcons/FirstAvatar.svg',
     name: 'Lorraine D. Raines',
     position: 'Student',
     text: '"I was absolutely shocked to see that Studify had such bad reviews! I am 15, and I started using Studify because I wanted to learn Unity, (a game engine) and purchased 4 courses on the subject."',
   },
   {
-    icon: '/img/AvatarIcons/SecondAvatar.svg',
+    icon: './img/AvatarIcons/SecondAvatar.svg',
     name: 'Julia Smith',
     position: 'UI/UX Designer',
     text: '"I have been a fan of Udemy for a long time and currently have over 85 courses in my account. I find the platform user friendly and you can contact the instructors no matter how long ago the course was posted."',
   },
   {
-    icon: '/img/AvatarIcons/ThirdAvatar.svg',
+    icon: './img/AvatarIcons/ThirdAvatar.svg',
     name: 'David Bard',
     position: 'Product Manager',
     text: '"Many of my coworkers choose to use Udemy for continuing education. I feel it has the best selection, training and curriculum vs others I have tried. Yes, the courses may be longer than others, but they\'re more detailed."',
   },
   {
-    icon: '/img/AvatarIcons/FourthAvatar.svg',
+    icon: './img/AvatarIcons/FourthAvatar.svg',
     name: "Sarah O'Neill",
     position: 'Frontend Developer',
     text: '"I have taken several courses (about 6 or 7) and have found the instructors to be professional and knowledgeable. The content has been engaging and cause reflection and opportunities to practice."',
   },
   {
-    icon: '/img/AvatarIcons/FifthAvatar.svg',
+    icon: './img/AvatarIcons/FifthAvatar.svg',
     name: 'John Doe',
     position: 'Web Developer',
     text: '"I\'ve bought three courses so far: Modern Python Bootcamp and SQL Bootcamp by Colt Steele as well as Python for Data Science and Machine learning by Jose Portilla. These 3 courses are incredibly detailed, beautifully made, and amazing for a beginner like myself."',
