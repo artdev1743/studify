@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feedback</title>
-    <link rel="stylesheet" href="../css/feedback.css" />
-    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="icon" href="../img/favicon.ico" />
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <title>Thank you!</title>
   </head>
+
   <body>
     <header style="position: unset" class="header-menu">
       <div class="header-menu-logo">
@@ -20,7 +19,7 @@
         <a href="../index.html">Home</a>
         <a href="./Product.html">Product</a>
         <a href="./About.html">About</a>
-        <a id="menu-active">Feedback</a>
+        <a href="./Feedback.html">Feedback</a>
       </div>
       <div class="header-menu-login">
         <button onclick="location.href='/pages/Login.html'" class="brand-button">Login</button>
@@ -47,11 +46,13 @@
 
     <section class="login-section">
       <div class="page-section-name-container">
-        <h1 class="page-section-name">Feedback</h1>
-        <div style="width: 9rem" class="page-section-breadcrumbs">
+        <h1 class="page-section-name">Thank you!</h1>
+        <div style="width: 14rem" class="page-section-breadcrumbs">
           <a href="../index.html" class="breadcrumbs-backlink breadcrumbs-text">Home</a>
           <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
-          <p class="breadcrums-current breadcrumbs-text">Feedback</p>
+          <a href="./Feedback.html" class="breadcrumbs-backlink breadcrumbs-text">Feedback</a>
+          <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
+          <p class="breadcrums-current breadcrumbs-text">Thank you</p>
         </div>
         <div style="position: relative">
           <img class="breadcrumbs-decoration" id="circles" src="../img/DecorativeIcons/CircleGroupIcon.svg" />
@@ -60,45 +61,11 @@
           <img class="breadcrumbs-decoration" id="lines" src="../img/DecorativeIcons/PurpleLinesIcon.svg" />
         </div>
       </div>
-    </section>
-
-    <section class="form">
-        <div class="form-header">
-            <h3>Thanks for visiting our small website! we would like to ask you for filling out this feedback form for helping us to improve the overal quality of serving</h3>
-        </div>
-
-        <div class="form-mainPart">
-            <div class="form1">
-                <form>
-                    <input class="form-input" type="text" name="fullname" placeholder="Full Name" id="fullname" />
-                    <label for="fullname" class="error" id="field_empty_error">*This field is required</label><br/>
-                    <input class="form-input" type="text" name="job_title" placeholder="Position" id="job_title" />
-                </form>
-            </div>
-
-            <div class="form2">
-                <form>
-                    <input class="form-input" type="email" name="email" placeholder="Email" id="email"><br/>
-                    <input class="form-input" type="address" name="address" placeholder="Address" id="address">
-                </form>
-            </div>
-        </div>
-
-        <div class="form-subpart">
-            <form>
-              <div class="radio-button">
-                <label for="satisify" class="label" id="radio_label" >Overall experience: </label>
-                <input type="radio" id="satisify" name="satisifyRate" value="satisifyRate">
-                <label for="satisify" class="label1" id="radio_label1"> Satisifactory</label>
-                <input type="radio" id="fair" name="satisifyRate" value="fairRate">
-                <label for="fair" id="fair_label" class="label1">Fair</label>
-                <input type="radio" id="poor" name="satisifyRate" value="poorRate">
-                <label for="poor" id="poor_label" class="label1">Poor</label>
-              </div>
-                <textarea placeholder="Please tell us why you choose the option above! where should we improve:" class="form-input" id="form-textarea"></textarea><br/>
-            </form>
-            <button class="brand-button" id="form-button">Submit</button>
-        </div>
+      <div class="success-container">
+        <h2>Thank you for your feedback!</h2>
+        <img src="../img/IllustrationThankYou.svg" />
+        <button class="brand-button" onclick="location.href='../index.html'">Go to home</button>
+      </div>
     </section>
 
     <footer>
@@ -136,11 +103,9 @@
         </div>
       </div>
       <div class="copyright-container">
-        <p class="copyright-text">Copyright 2022 Studify<br />Designed For CENG 256.<br />All Rights Reserved</p>
+        <p class="copyright-text">Copyright 2022 Studify Designed For CENG 256. All Rights Reserved</p>
       </div>
     </footer>
-
-    <script type="text/javascript" src="../js/feedback.js"></script>
     <script type="text/javascript" src="../js/menu.js"></script>
   </body>
 </html>

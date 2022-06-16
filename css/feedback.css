@@ -1,93 +1,167 @@
-.form {
-  position: absolute;
+form {
   display: block;
-  top: 20%;
   left: 20%;
   color: aliceblue;
   height: 60%;
   font-family: 'Urbanist';
-  color: antiquewhite;
+  font-weight: 700;
+  color: rgb(10, 7, 4);
 }
 
-.form-header h1 {
-  font-size: 2rem;
+.form-header {
+  margin-top: 3rem;
 }
 
 .form-header h3 {
-  max-width: 70%;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 50vw;
+  margin: 0 auto;
   color: #525fe1;
 }
 
 .form-mainPart {
   display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .form-mainPart form {
-  font-size: 2rem;
-}
-
-.form-mainPart input {
-  font-size: 1.75rem;
-  height: 2.25rem;
-  width: 25rem;
+  font-size: 1.5rem;
 }
 
 .form2 {
   margin-left: 2rem;
 }
 
-#fullname {
-  width: 15rem;
-}
-
-#email {
-  margin-left: 1.8rem;
+.radio-button {
+  display: flex;
+  align-items: center;
 }
 
 .form-subpart label {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-#satisify {
-  margin-left: 3rem;
+.form-subpart form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
 }
 
-.form-subpart input {
+.radio-button input[type='radio'] {
   margin-left: 2rem;
+}
+
+.radio-button label {
+  margin-left: 0.5rem;
 }
 
 .label1 {
   font-size: 1.5rem;
 }
 
-#form-textarea {
-  width: 1094px;
-  height: 237px;
-}
-
-#form-button {
-  width: 30rem;
-  height: 3rem;
-  font-size: 2.5rem;
-  margin-left: 38.8rem;
-  background-color: #525fe1;
-  color: aliceblue;
-  font-family: 'Urbanist';
-  transition: all 0.3s;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-#form-button:hover {
-  color: black;
-  transform: scale(1.03);
-}
-
-#address {
-  width: 24.5rem;
-}
-
 .error {
   font-size: 1rem;
   color: red;
+}
+
+.form-subpart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-button {
+  margin: 1rem 0 4rem 0;
+}
+
+#form-textarea {
+  padding: 2rem;
+  margin-top: 2rem;
+  width: 60vw;
+}
+
+@media screen and (max-width: 1500px) {
+  .form {
+    font-weight: 700;
+  }
+
+  .form-mainPart .form1 {
+    font-size: 1.5rem;
+  }
+
+  .form-subpart label {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .form-subpart h2 {
+    font-size: 1.25rem;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .form-mainPart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form2 {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    left: 20%;
+    font-weight: 700;
+  }
+
+  .form-mainPart .form1 {
+    font-size: 1.25rem;
+  }
+
+  .form-subpart label {
+    font-size: 1rem;
+  }
+
+  .form-subpart h2 {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+
+  .form-header h3 {
+    max-width: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    left: 0;
+    font-weight: 700;
+  }
+
+  .form-mainPart .form1 {
+    font-size: 1rem;
+  }
+
+  .form-subpart label {
+    margin-left: 0.5rem;
+  }
+
+  .form-subpart h2 {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .form-header h3 {
+    max-width: 85vw;
+  }
+
+  .radio-button input[type='radio'] {
+    margin-left: 1rem;
+  }
 }
