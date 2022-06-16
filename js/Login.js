@@ -7,12 +7,12 @@ window.onload = function () {
   bnt.onclick = function () {
     var username = $('input#username').val();
     var password = $('input#password').val();
-    console.log(username, password);
+
     var length_password = password.length;
     var counter = 0;
 
     if (specification(username) == false) {
-      $('#username_error').show();
+      $('#username_error').html('Username must start from a letter').show();
       $('input#username').addClass('input-error');
       $('input#username').focus;
       return false;
@@ -38,7 +38,7 @@ window.onload = function () {
       $('input#password').focus();
       return false;
     } else if (specification(password) == false) {
-      $('#password_error').html('The first letter must only be letter').show();
+      $('#password_error').html('The first character must only be letter').show();
       $('input#password').addClass('input-error');
       $('input#password').focus();
       return false;
