@@ -1,7 +1,7 @@
 const testimonials = [
   {
     icon: './img/AvatarIcons/FirstAvatar.svg',
-    name: 'Lorraine D. Raines',
+    name: 'Lorraine Raines',
     position: 'Student',
     text: '"I was absolutely shocked to see that Studify had such bad reviews! I am 15, and I started using Studify because I wanted to learn Unity, (a game engine) and purchased 4 courses on the subject."',
   },

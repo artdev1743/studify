@@ -102,6 +102,8 @@ a {
 
 .mobile-menu-background {
   position: absolute;
+  z-index: 4;
+  top: 0;
   height: 100vh;
   width: 100vw;
   backdrop-filter: blur(3px);
@@ -277,6 +279,7 @@ footer {
   .header-menu-mobile {
     display: block;
     cursor: pointer;
+    z-index: 2;
   }
 
   .header-menu-mobile img {
