@@ -29,32 +29,19 @@
 
     <section class="login-section">
       <div class="page-section-name-container">
-        <h1 class="page-section-name">Login</h1>
-        <div class="page-section-breadcrumbs">
+        <h1 class="page-section-name">Successful Login</h1>
+        <div style="width: 12rem" class="page-section-breadcrumbs">
           <a href="../index.html" class="breadcrumbs-backlink breadcrumbs-text">Home</a>
           <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
-          <p class="breadcrums-current breadcrumbs-text">Login</p>
+          <a href="./Login.html" class="breadcrumbs-backlink breadcrumbs-text">Login</a>
+          <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
+          <p class="breadcrums-current breadcrumbs-text">Success</p>
         </div>
       </div>
-      <div class="form-section">
-        <div class="form-container">
-            <h2 class="form-container-title">Login</h2>
-          <form>
-            <input type="text" name="username" placeholder="Username" id="username" class="form-input" />
-            <label for="text" class="error" id="username_error"></label>
-            <input
-              style="margin-top: 2rem"
-              type="password"
-              name="password"
-              placeholder="Password"
-              id="password"
-              class="form-input"
-            />
-            <label for="password" class="error" id="password_error"></label>
-            <button type="submit" id="login-button" class="brand-button">Login</button>
-          </form>
-          <p class="form-section-help">Need help logging in?</p>
-        </div>
+      <div class="success-container">
+        <h2>You have been logged in!</h2>
+        <img src="../img/IllustrationSuccess.svg" />
+        <button class="brand-button" onclick="location.href='../index.html'">Go to home</button>
       </div>
     </section>
 
@@ -93,7 +80,7 @@
         </div>
       </div>
       <div class="copyright-container">
-        <p class="copyright-text">Copyright 2022 Studify<br/>Designed For CENG 256.<br/>All Rights Reserved</p>
+        <p class="copyright-text">Copyright 2022 Studify Designed For CENG 256. All Rights Reserved</p>
       </div>
     </footer>
 
