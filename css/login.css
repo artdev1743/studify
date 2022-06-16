@@ -3,6 +3,7 @@
 
 .page-section-name-container {
   background: url(../img/BannerBackground.svg) no-repeat !important;
+  overflow: hidden;
   background-size: 100vw 200px;
   padding: 3rem 6rem;
 }
@@ -145,21 +146,77 @@ form button {
 #earth {
   left: 20rem;
   top: -2rem;
+  height: 3.5rem;
 }
 
 #lines {
   left: 50rem;
   top: -5rem;
+  height: 4rem;
 }
 
 #purple {
   left: -5rem;
   top: -1rem;
+  height: 2rem;
 }
 
 #circles {
   left: 70rem;
   top: -7rem;
+  height: 3rem;
+}
+
+.instructions-modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+}
+
+.instructions-modal-content {
+  background-color: #fefefe;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  width: 31.25rem;
+}
+
+.instructions-modal-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instructions-modal-close img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.instructions-modal-header h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.instructions-modal-body {
+  margin-top: 1rem;
+}
+
+.instructions-modal-body div h3 {
+  font-size: 1.25rem;
+}
+
+.instructions-modal-body div p {
+  color: var(--typography-secondary);
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -182,6 +239,10 @@ form button {
   .success-container img {
     width: 80vw;
   }
+
+  .instructions-modal-content {
+    width: 25rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -191,6 +252,10 @@ form button {
   .form-input {
     width: 250px;
   }
+
+  .instructions-modal-content {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -199,5 +264,10 @@ form button {
   }
   .form-input {
     width: 200px;
+  }
+
+  .instructions-modal-content {
+    padding: 1rem;
+    width: 85vw;
   }
 }
