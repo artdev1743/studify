@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback</title>
-    <link rel="stylesheet" href="./css/feedback.css">
-    <link rel="icon" href="./img/School.ico">
+    <link rel="stylesheet" href="../css/feedback.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="icon" href="../img/favicon.ico" />
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-</head>
-<body>
-    <header class="header-section">
-        <div class="header-log">
-            <h1>Studify</h1>
-        </div>
-
-        <div class="header-menu">
-            <h3>Home</h3>
-            <h3>Training</h3>
-            <h3>Customers</h3>
-        </div>
-
-        <div class="header-setting">
-            <img src="img/searchButton.png" />
-            <img src="./img/imageButton.png"/>
-        </div>
+  </head>
+  <body>
+    <header style="position: unset" class="header-menu">
+      <div class="header-menu-logo">
+        <h1>Studify</h1>
+      </div>
+      <div class="header-menu-options">
+        <a href="../index.html">Home</a>
+        <a href="./Product.html">Product</a>
+        <a href="./About.html">About</a>
+        <a id="menu-active">Feedback</a>
+      </div>
+      <div class="header-menu-login">
+        <button onclick="location.href='/pages/Login.html'" class="brand-button">Login</button>
+      </div>
+      <div id="mobile-menu-burger" class="header-menu-mobile">
+        <img src="../img/MenuIcon.svg" />
+      </div>
     </header>
 
-    <section class="form">
+    <div class="mobile-menu-background">
+      <div class="mobile-menu">
+        <div id="mobile-menu-close" class="mobile-menu-cross">
+          <img src="../img/CrossIcon.svg" />
+        </div>
+        <div class="mobile-menu-items">
+          <a href="../index.html">Home</a>
+          <a href="./Product.html">Product</a>
+          <a href="./About.html">About</a>
+          <a href="./Feedback.html">Feedback</a>
+          <button onclick="location.href='./pages/Login.html'" class="brand-button">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="login-section">
+      <div class="page-section-name-container">
+        <h1 class="page-section-name">Feedback</h1>
+        <div style="width: 9rem" class="page-section-breadcrumbs">
+          <a href="../index.html" class="breadcrumbs-backlink breadcrumbs-text">Home</a>
+          <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
+          <p class="breadcrums-current breadcrumbs-text">Feedback</p>
+        </div>
+        <div style="position: relative">
+          <img class="breadcrumbs-decoration" id="circles" src="../img/DecorativeIcons/CircleGroupIcon.svg" />
+          <img class="breadcrumbs-decoration" id="earth" src="../img/DecorativeIcons/EarthIcon.svg" />
+          <img class="breadcrumbs-decoration" id="purple" src="../img/DecorativeIcons/PurpleShapeIcon.svg" />
+          <img class="breadcrumbs-decoration" id="lines" src="../img/DecorativeIcons/PurpleLinesIcon.svg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="form">
         <div class="form-header">
             <h1>Studify User Experience Feedback</h1><br/>
             <h3>Thanks for visiting our small website! we would like to ask you for filling out this feedback form for helping us to improve the overal quality of serving</h3>
@@ -70,8 +105,48 @@
             </form><br/>
             <button id="form-button">Submit</button>
         </div>
-    </section>
+    </section> -->
 
-    <script type="text/javascript" src="./js/Feedback.js"></script>
-</body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <h1 class="footer-logo">Studify</h1>
+          <p class="footer-logo-text">
+            Whether you want to learn or to share what you know, you've come to the right place. As a global destination
+            for online learning, we connect people through knowledge.
+          </p>
+          <div>
+            <img class="footer-social" src="../img/SocialIcons/LinkedIn.svg" />
+            <img class="footer-social" src="../img/SocialIcons/Facebook.svg" />
+            <img class="footer-social" src="../img/SocialIcons/Twitter.svg" />
+            <img class="footer-social" src="../img/SocialIcons/Instagram.svg" />
+          </div>
+        </div>
+        <div class="footer-links-container">
+          <h1 class="footer-logo">Pages</h1>
+          <div class="footer-links-list">
+            <a href="../index.html">Home</a>
+            <a href="./Product.html">Product</a>
+            <a href="./About.html">About</a>
+            <a href="./Feedback.html">Feedback</a>
+          </div>
+        </div>
+        <div class="footer-contact-container">
+          <h1 class="footer-logo">Contact</h1>
+          <div class="footer-contanct-list">
+            <p>Kyrylo Lvov, n01414058</p>
+            <p>Wenyuan Yu, n01403697</p>
+            <p>Artem Tsurkan, n01414146</p>
+            <p>Zoyeba Mahbub, n01445837</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p class="copyright-text">Copyright 2022 Studify<br />Designed For CENG 256.<br />All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/feedback.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+  </body>
 </html>
