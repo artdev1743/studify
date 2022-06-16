@@ -64,13 +64,13 @@ window.onload = function () {
     }
 
     if (counter == 2) {
-      window.location.href = 'Feedback.html';
+      window.location.href = 'LoginSuccess.html';
+      return false;
     }
   };
 
   function specification(username) {
     var letter = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var s;
     if (letter.includes(username.charAt(0))) {
       return true;
     } else {

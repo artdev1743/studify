@@ -209,6 +209,7 @@ footer {
 
 .footer-contanct-list p {
   color: var(--typography-button);
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
